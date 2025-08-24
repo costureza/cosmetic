@@ -1,0 +1,198 @@
+.header{
+    padding: 1.5rem 9%;
+    background: var(--branco);
+    box-shadow: var(--box-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header .logo img{
+    height: 4.5rem;
+}
+
+.header .search-form{
+    height: 5rem;
+    width: 50rem;
+    border-radius: .5rem;
+    background: var(--light-branco);
+    display: flex;
+    align-items: center;
+    padding: 0 1.5rem;
+}
+
+.header .search-form input{
+    width: 100%;
+    background: none;
+    font-size: 1.6rem;
+    color: var(--light-branco);
+
+}
+.header .search-form label{
+    font-size: 2rem;
+    margin-left: .7rem;
+    color: var(--black);
+    cursor: pointer;
+}
+.header .search-form label:hover{
+    color: var(--rosa);
+}
+
+.header .icons a,
+.header .icons div{
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    text-align: center;
+    background: var(--light-branco);
+    color: var(--black);
+    cursor: pointer;
+    font-size: 1.8rem;
+    margin-left: .3rem;
+    border-radius: .5rem;
+}
+
+.header .icons a:hover,
+.header .icons div:hover{
+    background: var(--rosa);
+    color: var(--branco);
+}
+.header .icons #search-btn{
+    display: none;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: -110%;
+    z-index: 1010;
+    height: 100%;
+    width: 100%;
+    background:url(../img/header.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-flow: column;
+    align-items: flex-end;
+    padding-right:15% ;
+}
+.navbar.active{
+    left: 0;
+}
+
+.navbar a{
+    font-size: 4rem;
+    color: var(--branco); 
+    text-transform: uppercase;   
+}
+.navbar a:hover{
+    color: var(--black);
+    letter-spacing: .2rem;
+}
+
+.navbar #close-navbar{
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    text-align: center;
+    background: var(--branco);
+    color: var(--black);
+    font-size: 3rem;
+    cursor: pointer;
+}
+.navbar #close-navbar:hover{
+    color: var(--branco);
+    background: var(--rosa);
+}
+
+.footer{
+    background: var(--light-branco);
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 2rem;
+}
+
+.footer .box h3{
+    font-size: 2.2rem;
+    color: var(--black);
+    padding: 1rem 0;
+}
+.footer .box .link{
+    padding: 1rem 0;
+    display: block;
+    font-size: 1.5rem;
+    color: var(--light-black);
+}
+.footer .box p i,
+.footer .box .link i{
+    padding: .5rem;
+    color: var(--rosa);
+}
+.footer .box .link:hover{
+    color: var(--rosa);
+}
+.footer .box .link:hover i{
+    padding-right: 2rem;
+}
+
+.footer .box p{
+    font-size: 1.5rem;
+    color: var(--light-black);
+    padding: 1rem 0;
+}
+.footer .box .share{
+    margin-top: 2rem;
+}
+.footer .box .share a{
+    height: 5rem;
+    width: 5rem;
+    background: var(--branco);
+    border: var(--border);
+    font-size: 2rem;
+    line-height: 4.5rem;
+    color: var(--black);
+    text-align: center;
+    margin-right: .3rem;
+}
+.footer .box .share a:hover{
+    background: var(--rosa);
+    color: var(--branco);
+}
+.footer .box form .email{
+    width: 100%;
+    border: var(--border);
+    padding: 1.2rem 1.4rem;
+    font-size: 1.6rem;
+    color: var(--light-black);
+    margin: 1rem 0;
+}
+.footer .credit{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    padding: 1rem;
+    border-top: var(--border);
+    padding-top: 3rem;
+    color: var(--light-black);
+}
+.footer .credit a span{
+    color: var(--rosa);
+}
+.footer .credit-2{
+    text-align: center;
+    font-size: 2rem;
+    color: var(--light-black);
+}

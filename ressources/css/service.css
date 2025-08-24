@@ -1,0 +1,36 @@
+.service{
+    background: var(--light-branco);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+    gap: 2rem;
+}
+.service .box{
+    border: var(--border);
+    padding: 2rem;
+    text-align: center;
+    background: var(--branco);
+}
+.service .box img{
+    height: 8rem;
+    margin-bottom: .5rem;
+}
+.service .box h3{
+    padding: .7rem 0;
+    font-size: 2rem;
+    color: var(--black);
+}
+.service .box p{
+    font-size: 1.5rem;
+    color: var(--light-black);
+    line-height: 2;
+}
+.service .box:hover{
+    background: var(--black);
+}
+.service .box:hover img{
+    filter: invert(1);
+}
+.service .box:hover p,
+.service .box:hover h3{
+    color: var(--branco);
+}

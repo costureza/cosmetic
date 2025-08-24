@@ -1,0 +1,38 @@
+.arrivals .slide{
+    text-align: center;
+    background: var(--branco);
+}
+.arrivals .slide .image{
+    height: 30rem;
+    width: 100%;
+    overflow: hidden;
+}
+.arrivals .slide .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.arrivals .slide:hover .image img{
+    transform: scale(1.1);
+}
+
+.arrivals .slide .content{
+    padding-top: .5rem;
+}
+
+.arrivals .slide .content p{
+    font-size: 2rem;
+    color: var(--black);
+    line-height: 2;
+    padding: .5rem 0;
+}
+.arrivals .slide .content .price{
+    font-size: 2rem;
+    color: var(--rosa);
+}
+
+.arrivals .slide .content .price span{
+    color: var(--light-black);
+    font-size: 1.5rem;
+    text-decoration: line-through;
+}

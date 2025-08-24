@@ -1,0 +1,57 @@
+.blogs .slide .image{
+    height: 30rem;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.blogs .slide .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.blogs .slide:hover .image img{
+    transform: scale(1.1);
+}
+.blogs .slide .image .icons{
+    background: var(--branco);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translatey(10rem);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    border: var(--border);
+    z-index: 10;
+}
+.blogs .slide:hover .image .icons{
+    transform: translateY(0);
+}
+.blogs .slide .image .icons a{
+    font-size: 1.5rem;
+    color: var(--black);
+}
+.blogs .slide .image .icons a i{
+    color: var(--rosa);
+    padding-right: .5rem;
+}
+.blogs .slide .image .icons a i:hover{
+    color: var(--black);
+}
+.blogs .slide .content{
+    text-align: center;
+    padding: 1.5rem;
+}
+.blogs .slide .content h3{
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.blogs .slide .content p{
+    padding: 1rem 0;
+    line-height: 2;
+    color: var(--light-black);
+    font-size: 1.5rem;
+}

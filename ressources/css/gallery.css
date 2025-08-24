@@ -1,0 +1,25 @@
+.gallery{
+    background: var(--light-branco);
+}
+
+.gallery .lightbox{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+    gap: 2rem;
+}
+
+.gallery .lightbox a{
+    height: 30rem;
+    overflow: hidden;
+    border: 1rem solid var(--branco);
+    box-shadow: var(--box-shadow);
+}
+.gallery .lightbox a img:hover{
+    transform: scale(1.1);
+
+}
+.gallery .lightbox a img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}

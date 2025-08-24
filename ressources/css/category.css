@@ -1,0 +1,28 @@
+.category{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 2rem;
+}
+.category .box{
+    padding: 2rem;
+    border-radius: .5rem;
+    background: var(--light-branco);
+    text-align: center;
+}
+.category .box img{
+    height: 10rem;
+    margin-bottom: 1rem;
+}
+.category .box p{
+    font-size: 1.7rem;
+    color: var(--black);
+}
+.category .box:hover img{
+    filter: invert(1);
+}
+.category .box:hover p{
+    color: var(--branco);
+}
+.category .box:hover{
+    background: var(--black);
+}

@@ -1,0 +1,30 @@
+.about{
+    background: url(../img/about.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+}
+.about .content{
+    width: 55rem;
+    background: var(--branco);
+    padding: 3rem;
+}
+
+.about .content span{
+    color: var(--rosa);
+    font-size: 2rem;
+}
+
+.about .content h3{
+    padding-top: 1rem;
+    font-size: 3rem;
+    color: var(--black);
+}
+.about .content p{
+    font-size: 1.5rem;
+    color: var(--light-black);
+    line-height: 2;
+    padding: 1rem 0;
+}

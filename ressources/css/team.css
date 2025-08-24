@@ -1,0 +1,70 @@
+.team{
+    background: linear-gradient(var(--light-branco) 50%, var(--branco) 50.1%);
+}
+.team .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+    gap: 2rem;
+}
+.team .box-container .box{
+    border: var(--border);
+    text-align: center;
+}
+.team .box-container .box:hover .image img{
+    transform: scale(1.1);
+}
+.team .box-container .box:hover .image .share{
+    left: 0;
+}
+.team .box-container .box .image{
+    height: 50rem;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.team .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.team .box-container .box .image .share{
+    position: absolute;
+    top: 0;
+    left: -8rem;
+    background: var(--black);
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding: 0 1rem;
+    gap: 1rem;
+}
+
+.team .box-container .box .image .share a{
+    height: 5rem;
+    width: 5rem;
+    border: .2rem solid var(--branco);
+    font-size: 2.5rem;
+    color: var(--branco);
+    line-height: 5rem;
+}
+
+.team .box-container .box .image .share a:hover{
+    background: var(--branco);
+    color: var(--black);
+}
+
+.team .box-container .box .content{
+    border-top: var(--border);
+    padding: 1.5rem;
+}
+.team .box-container .box .content h3{
+    font-size: 2rem;
+    color: var(--black);
+    font-weight: bold;
+}
+.team .box-container .box .content p{
+    font-size: 1.5rem;
+    color: var(--rosa);
+}

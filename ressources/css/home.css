@@ -1,0 +1,82 @@
+.home{
+    padding: 0;
+}
+
+.home .slide{
+    display: none;
+    height: calc(100vh - 7rem);
+}
+
+.home .slide.active{
+    display: flex;
+}
+.home .slide .content{
+    width: 50%;
+    padding: 2rem 7%;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: flex-start;
+    background: #fce9f2;
+    position: relative;
+}
+.home .slide .content img{
+    height: 25rem;
+    width: 25rem;
+    margin-bottom: 2rem;
+    object-fit: cover;
+    border-radius: 50%;
+    animation: fadeUP .2s linear backwards .2s;
+    display: none;
+}
+.home .slide .content span{
+    color: var(--rosa);
+    display: block;
+    font-size: 2.5rem;
+    padding-bottom: .5rem;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    animation: fadeUP .2s linear backwards .4s;
+}
+.home .slide .content h3{
+    font-size: 5.5rem;
+    text-transform: uppercase;
+    color: var(--black);
+    animation: fadeUP .2s linear backwards .6s;
+}
+.home .slide .content .btn{
+    animation: fadeUP .2s linear backwards .8s;
+}
+
+.home .slide .content .controls{
+    position: absolute;
+    bottom: 12%;
+    right: -7rem;
+}
+.home .slide .content .controls div{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 3rem;
+    background: var(--branco);
+    color: var(--black);
+    margin: 0 1rem;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+
+}
+.home .slide .content .controls div:hover{
+    color: var(--branco);
+    background: var(--rosa);
+    transform: scale(1.1);
+}
+.home .slide .image{
+    width: 50%;
+    height: 100%;
+}
+.home .slide .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}

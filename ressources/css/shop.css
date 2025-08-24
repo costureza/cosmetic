@@ -1,0 +1,85 @@
+.shop .slide{    
+    border: var(--border);
+    background: var(--branco);
+}
+.shop .slide:hover .image img{
+    transform: scale(1.1);
+}
+.shop .slide:hover .image .icons{
+    right: 1rem;
+}
+.shop .slide .image{
+    height: 35rem;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.shop .slide .image .discount{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    padding: .5rem 1.5rem;
+    font-size: 1.5rem;
+    color: var(--branco);
+    background: var(--rosa);
+    z-index: 10;
+}
+
+.shop .slide .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.shop .slide .icons{
+    position: absolute;
+    bottom: 0;
+    right: -8rem;
+}
+.shop .slide .icons a{
+    height:5rem;
+    width: 5rem;
+    line-height: 4.5rem;
+    font-size: 2rem;
+    background: var(--branco);
+    color: var(--black);
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    margin-bottom: 1rem;
+    display: block;
+    text-align: center;
+}
+.shop .slide .icons a:hover{
+    background: var(--rosa);
+    color: var(--branco);
+}
+.shop .slide .content{
+    padding: 2rem;
+    border-top: var(--border);
+}
+.shop .slide .content .stars{
+    padding-bottom: .5rem;
+}
+.shop .slide .content .stars i{
+    font-size: 1.5rem;
+    color: var(--light-black);
+}
+.shop .slide .content p{
+    font-size: 2rem;
+    color: var(--black);
+    line-height: 2;
+}
+.shop .slide .content .price{
+    font-size: 2rem;
+    color: var(--rosa);
+}
+.shop .slide .content .price span{
+    font-size: 1.5rem;
+    color: var(--light-black);
+    text-decoration: line-through;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after{
+    font-size: 2rem;
+    color: var(--black);
+}
